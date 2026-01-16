@@ -2,9 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const path = require('path');
-require('./database'); 
+require('./database');
 
-const userRoutes = require('./userRoutes');
+const { router } = require('./userRoutes');
 
 const app = express();
 const PORT = process.env.PORT ;
@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/', userRoutes); 
+app.use('/', router); 
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
