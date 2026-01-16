@@ -1,6 +1,6 @@
 # PostgreSQL Node.js Application
 
-A Node.js web application demonstrating PostgreSQL database integration with user management functionality.
+A Node.js web application demonstrating PostgreSQL database integration with user management functionality. 
 
 ## Description
 
